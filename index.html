@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oncode.ventures</title>
+    <!--55 y 65 carateres-->
+    <meta
+      name="description"
+      content="Venture studio de desarrollo de software."
+    />
+    <!--no más de 165 caracteres-->
+    <link rel="canonical" href="https://oncode.venutres" />
+    <link rel="icon" href="./assets/img/social_profile_mirko.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--APUNTES
+    naming conventions para clases
+    camelCase = sectionDos
+    kebab = section-dos
+    snake = section_dos
+    BEM = Bloque Elemento Modif
+    Notas: las clases se pueden usar varias veces, el id sólo una vez. important! sólo se puede usar una vez, NO USAR.
+    FIN DE APUNTES-->
+
+    <!--Inicio de Header-->
+    <header>
+      <div class="logo-header">
+        <img src="./assets/img/white_logo_no_background.png" alt="logo" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-bar-ul">
+          <li><a href="#">inicio</a></li>
+          <li><a href="./pages/portafolio.html">portafolio</a></li>
+          <li><a href="./pages/proceso.html">proceso</a></li>
+          <li><a href="./pages/noticias.html">noticias</a></li>
+          <li>
+            <a id="contacto-navbar-index" href="./pages/contacto.html"
+              >contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Fin Header-->
+
+    <br />
+
+    <main>
+      <section class="cover-text-index">
+        <div>
+          <h1>construimos negocios con tecnología</h1>
+          <br>
+          <p>
+            reunimos ideas de emprendedores con diseñadores y desarrolladores de
+            software para crear negocios que resuelvan grandes problemas.
+          </p>
+          <br>
+          <a href="index.html#nuestros-planes">ver nuestros planes</a>
+        </div>
+        <div class="nasa">
+          <img src="./assets/img/group_27.png" alt="astro" />
+        </div>
+      </section>
+      <br />
+      <section class="ofrecemos">
+        <h3>¿qué ofrecemos?</h3>
+        <h2>contruimos tú idea en tres meses o menos</h2>
+        <br>
+        <p>
+          ofrecemos una solución integral en todo el proceso de desarrollo de
+          producto y brindamos soporte en todas las etapas de tu empresa.
+        </p>
+      </section>
+
+      <!--Portafolio de Proyectos-->
+      <h3>portafolio</h3>
+      <h2>algunos de nuestros proyectos</h2>
+      <br>
+      <section class="container-card">
+        <div class="card">
+          <img src="./assets/img/woomad_design_20.png" alt="woomad-logo" />
+          <br>
+          <h4>liquidaciones de inventario</h4>
+          <a href="https://www.woomad.com" target="_blank">www.woomad.com</a>
+        </div>
+        <div class="card">
+          <img src="" />
+          <h4>stealth: salud</h4>
+          <br>
+          <p>coming soon...</p>
+        </div>
+        <div class="card">
+          <img src="" />
+          <h4>stealth: fintech</h4>
+          <br>
+          <p>coming soon...</p>
+        </div>
+      </section>
+      <!--Fin de Portafolio de Proyectos-->
+
+      <section>
+        <div>
+          <h3>¿qué nos distingue?</h3>
+          <h2>somos un equipo flexible que te permite escalar</h2>
+        </div>
+        <br>
+        <div>
+          <p>
+            trabajamos como co-fundadores y puedes agregar o remover servicios
+            de acuerdo a tus necesidades de manera sencilla - considéranos como
+            un híbrido entre un venture studio y una agencia.
+          </p>
+          <br>
+          <br>
+          <div class="roles-box">
+            <p class="rol-1">desarrollador</p>
+            <p class= "rol-2">product manager</p>
+            <p class= "rol-3">diseñador ui/ux</p>
+            <p class= "rol-4">diseñador gráfico</p>
+            <p class= "rol-5">marketing digital</p> 
+          </div>
+          <br>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h3 id="nuestros-planes">nuestros planes</h3>
+          <h2>crece con nosotros</h2>
+        </div>
+        <br>
+        <div class="container-planes">
+          <div class="plan-index">
+            <h4 class="plan-index-title">plan pre-seed</h4>
+            <p>construye cualquier idea en 3 meses o menos:</p>
+            <ul>
+              <li>mvp versión 1</li>
+              <li>avances cada 2 semanas</li>
+              <li>construido con herramientas no/low code</li>
+              <li>reduce costos en desarrollo</li>
+              <li>soporte en planeación y modelo de negocio</li>
+            </ul>
+            <div class="plan-bottom-group">
+              <div>
+                <p class="plan-index-price">mxn 17,000 x avance</p>
+              </div>
+              <div class="group-contacto-index">
+                <a href="./pages/contacto.html">contacto</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="plan-index">
+            <h4 class="plan-index-title">plan flex</h4>
+            <p>contrata diferentes servicios bajo demanda:</p>
+            <ul>
+              <li>product manager</li>
+              <li>diseñador ui/ux</li>
+              <li>diseñador gráfico</li>
+              <li>growth marketing</li>
+              <li>desarrollador</li>
+            </ul>
+            <div class="plan-bottom-group">
+              <div>
+                <p class="plan-index-price">mxn 8,000 x mes x rol</p>
+              </div>
+              <div class="group-contacto-index">
+                <a href="./pages/contacto.html">contacto</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan-index">
+            <h4 class="plan-index-title">plan escala</h4>
+            <p>soporte continuo después del lanzamiento:</p>
+            <ul>
+              <li>métricas</li>
+              <li>planeación</li>
+              <li>mejora de producto</li>
+              <li>+ funcionalidades</li>
+              <li>soporte en recaudación de fondos</li>
+            </ul>
+            <div class="plan-bottom-group">
+              <div>
+                <p class="plan-index-price">mxn 20,000 x mes</p>
+              </div>
+              <div class="group-contacto-index">
+                <a href="./pages/contacto.html">contacto</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="./assets/img/social_profile_mirko.jpg" alt="logo" />
+      <br>
+      <p>@2023 oncode.ventures - todos los derechos reservados</p>
+      <br>
+      <a href="mailto:info@oncode.ventures.com">info@oncode.ventures</a>
+      <a href="https://www.twitter.com" target="_blank">twitter</a>
+      <a href="https://www.linkedin.com" target="_blank">linkedin</a>
+    </footer>
+  </body>
+</html>

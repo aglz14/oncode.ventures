@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contacto</title>
+    <link rel="icon" href="../assets/img/social_profile_mirko.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-header">
+        <img src="../assets/img/white_logo_no_background.png" alt="logo" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-bar-ul">
+          <li><a href="../index.html">inicio</a></li>
+          <li><a href="portafolio.html">portafolio</a></li>
+          <li><a href="proceso.html">proceso</a></li>
+          <li><a href="noticias.html">noticias</a></li>
+          <li><a id="contacto-navbar-contacto" href="#">contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page-title">
+        <h3>contacto</h3>
+        <h1>¿tienes una gran idea?</h1>
+      </section>
+      <section class="contacto-form">
+        <form action="" autocomplete="off">
+          <fieldset>
+            <!--<legend></legend>-->
+            <div>
+              <label for="nombre">hola, mi nombre es</label>
+              <input type="text" id="nombre" placeholder="" required />
+            </div>
+            <br>
+            <div>
+              <label for="email">mi correo es</label>
+              <input type="email" id="email" required />
+            </div>
+            <br>
+            <div>
+              <p>estoy interesado en</p>
+              <input
+                type="radio"
+                id="plan-preseed-radio"
+                name="interesado"
+                value="plan-preseed-radio"
+                required
+              />
+              <label for="plan-preseed-radio">plan pre-seed</label><br />
+              <input
+                type="radio"
+                id="plan-flex-radio"
+                name="interesado"
+                value="plan-flex-radio"
+              />
+              <label for="plan-flex-radio">plan flex</label><br />
+              <input
+                type="radio"
+                id="plan-escala-radio"
+                name="interesado"
+                value="plan-escala-radio"
+              />
+              <label for="plan-escala-radio">plan escala</label><br />
+              <input
+                type="radio"
+                id="colaboracion-radio"
+                name="interesado"
+                value="colaboracion-radio"
+              />
+              <label for="colaboracion-radio">colaboracion</label><br />
+              <input
+                type="radio"
+                id="consulta-radio"
+                name="interesado"
+                value="consulta-radio"
+              />
+              <label for="consulta-radio">consulta</label><br />
+            </div>
+            <br>
+            <label for="comentarios">comentarios</label>
+            <br>
+            <textarea
+              id="comentarios"
+              name="comentarios"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+            <br/>
+            <input type="submit" value="Enviar" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <img src="../assets/img/social_profile_mirko.jpg" alt="logo" />
+      <br>
+      <p>@2023 oncode.ventures - todos los derechos reservados</p>
+      <br>
+      <a href="mailto:info@oncode.ventures.com">info@oncode.ventures</a>
+      <a href="https://www.twitter.com" target="_blank">twitter</a>
+      <a href="https://www.linkedin.com" target="_blank">linkedin</a>
+    </footer>
+  </body>
+</html>
