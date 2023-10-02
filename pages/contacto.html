@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <div class="logo-header">
+      <!--<div class="logo-header">
         <img src="../assets/img/white_logo_no_background.png" alt="logo" />
       </div>
       <nav class="nav">
@@ -20,7 +20,36 @@
           <li><a href="proceso.html">proceso</a></li>
           <li><a href="noticias.html">noticias</a></li>
           <li><a id="contacto-navbar-contacto" href="#">contacto</a></li>
-        </ul>
+        </ul>-->
+      <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid row d-flex">
+            <div class="logo-header jusity-content-start">
+                <img src="../assets/img/white_logo_no_background.png" alt="logo" />
+            </div>
+            <button class="navbar-toggler bg-white m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-white"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mt-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portafolio.html">portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./proceso.html">proceso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./noticias.html">noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
       </nav>
     </header>
     <main>
@@ -32,17 +61,17 @@
         <form action="" autocomplete="off">
           <fieldset>
             <!--<legend></legend>-->
-            <div>
+            <div class="name-label-contacto">
               <label for="nombre">hola, mi nombre es</label>
               <input type="text" id="nombre" placeholder="" required />
             </div>
             <br>
-            <div>
+            <div class="email-label-contacto">
               <label for="email">mi correo es</label>
               <input type="email" id="email" required />
             </div>
             <br>
-            <div>
+            <div class="interesado-label-contacto">
               <p>estoy interesado en</p>
               <input
                 type="radio"
@@ -81,18 +110,20 @@
               />
               <label for="consulta-radio">consulta</label><br />
             </div>
-            <br>
-            <label for="comentarios">comentarios</label>
-            <br>
-            <textarea
+            <br></br>
+            <div class="comentarios-label-contacto">
+              <label for="comentarios">comentarios</label>
+              <br></br>
+              <textarea
               id="comentarios"
               name="comentarios"
               rows="4"
-              cols="50"
+              cols="50" style="max-width: 80%;"
               required
-            ></textarea>
-            <br/>
-            <input type="submit" value="Enviar" />
+              ></textarea>
+              <br></br>
+              <input type="submit" value="Enviar" />
+            </div>
           </fieldset>
         </form>
       </section>
