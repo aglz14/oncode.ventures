@@ -1,0 +1,10 @@
+footer {
+  color: map-get($color,first);
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+
+footer a[href] {
+  color: map-get($color,first);
+}

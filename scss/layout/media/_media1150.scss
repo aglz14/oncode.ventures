@@ -1,0 +1,28 @@
+@media (max-width: 1150px) {
+  header {
+    display: flex;
+    padding: .625rem 1.25rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: .75rem;
+    z-index: 3;
+  }
+  
+  .proceso-body {
+    grid-area: proceso-body;
+    width: 80%;
+  }
+  .container-articles { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "article1 article2"
+    "article3 ."
+    ;
+    justify-items: center;
+    row-gap: 3.125rem;
+    margin-bottom: 6.25rem;
+  }
+}

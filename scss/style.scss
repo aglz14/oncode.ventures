@@ -1,0 +1,31 @@
+
+/** elementos de la carpeta utilities: **/
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+/** elementos de la carpeta base: **/ 
+@import "./base/reset";
+@import "./base/typo";
+
+/** elementos de la carpeta layout: **/ 
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./layout/main-index";
+@import "./layout/body";
+@import "./layout/proceso";
+@import "./layout/portafolio";
+@import "./layout/footer";
+
+/** elementos de la carpeta components: **/ 
+@import "./components/article";
+@import "./components/card";
+@import "./components/title";
+@import "./components/contacto";
+
+/** elementos de la carpeta media query: **/ 
+@import "./layout/media/media320";
+@import "./layout/media/media375";
+@import "./layout/media/media480";
+@import "./layout/media/media768";
+@import "./layout/media/media1150";

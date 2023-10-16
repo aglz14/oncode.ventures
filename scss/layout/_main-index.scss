@@ -1,0 +1,120 @@
+main {
+    padding: 1.25rem 1.25rem;
+}
+
+.cover-text-index {
+  display: flex;
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
+}
+
+.cover-text-index h1 {
+  font-size: 3.75rem;
+}
+
+.cover-text-index div p {
+  font-size: 1.5625rem;
+  width: 80%
+}
+
+.cover-text-index div a {
+  color: white;
+  font-size: 1.5625rem;
+  width: 80%
+}
+
+.ofrecemos {
+  margin-bottom: 6.25rem;
+}
+
+.roles-box {
+  display: flex;
+  justify-content: space-evenly;
+  height: 4.375rem;
+  margin-bottom: 6.25rem;
+}
+
+.rol-1 {
+  display: flex;
+  align-self: flex-start;
+}
+
+.rol-2 {
+  display: flex;
+  align-self: flex-end;
+}
+
+.rol-3 {
+  display: flex;
+  align-self: flex-start;
+}
+
+.rol-4 {
+  display: flex;
+  align-self: flex-end;
+}
+
+.rol-5 {
+  display: flex;
+  align-self: flex-start;
+}
+
+
+.container-planes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 6.25rem;
+}
+
+.plan-index {
+  margin: 10px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 5px 0px;
+  border-radius: 5%;
+  text-decoration: none;
+  width: 21.875rem;
+  height: 23.75rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.plan-index p {
+  padding: 0rem .3125rem
+}
+
+
+.plan-index-title {
+  text-align: center;
+  margin: 5px;
+  border-bottom: 2px white solid;
+}
+
+.plan-index-price {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.plan-bottom-group {
+  position: absolute;
+  width: 100%;
+  bottom:2px;
+}
+
+.group-contacto-index {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: white;
+  padding: 5px 0px 5px 0px;
+}
+
+.group-contacto-index a {
+  color: #181818;
+  text-decoration: none;
+  text-align: center;
+}

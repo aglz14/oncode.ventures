@@ -1,0 +1,49 @@
+@media (max-width: 320px) {
+  .card img {
+    display: none;
+  }
+
+  .roles-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 6.25rem;
+  }
+
+  .proceso-body {
+    grid-area: proceso-body;
+    width: 15%;
+  }  
+
+  .name-label-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-label-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interesado-label-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .comentarios-label-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .3125rem;
+  }
+
+  textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+}
