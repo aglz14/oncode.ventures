@@ -1,0 +1,15 @@
+@mixin start {
+display: flex;
+align-self: flex-start;
+}
+
+@mixin end {
+display: flex;
+align-self: flex-end;
+}
+
+@mixin articleimg {
+  width: 100%;
+  height: 18.75rem;
+  object-fit: cover;
+}

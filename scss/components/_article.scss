@@ -10,8 +10,8 @@
 }
 
 .article1 {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.05);
+  color: $first;
+  background-color: $third;
   margin: .625rem;
   width: 21.875rem;
   text-align: center;
@@ -20,39 +20,23 @@
 }
 
 .article1 img {
-  width: 100%;
-  height: 18.75rem;
-  object-fit: cover;
+  @include articleimg;
 }
 
 .article2 {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.05);
-  margin: .625rem;
-  width: 21.875rem;
-  text-align: center;
-  overflow: hidden;
-}
-
-.article2 img {
-  width: 100%;
-  height: 18.75rem;
-  object-fit: cover;
+  @extend .article1;
   grid-area: article2;
 }
 
+.article2 img {
+  @include articleimg;
+}
+
 .article3 {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.05);
-  margin: .625rem;
-  width: 21.875rem;
-  text-align: center;
-  overflow: hidden;
+  @extend .article1;
   grid-area: article3;
 }
 
 .article3 img {
-  width: 100%;
-  height: 18.75rem;
-  object-fit: cover;
+  @include articleimg;
 }

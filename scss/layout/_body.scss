@@ -5,6 +5,6 @@ html {
 body {
   text-transform: lowercase;
   font-family: "JetBrains Mono", monospace;
-  color: white;
-  background-color: #181818;
+  color: $first;
+  background-color: $second;
 }

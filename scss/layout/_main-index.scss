@@ -9,17 +9,17 @@ main {
 }
 
 .cover-text-index h1 {
-  font-size: 3.75rem;
+  font-size: map-get($font-size,xxl);
 }
 
 .cover-text-index div p {
-  font-size: 1.5625rem;
+  font-size: map-get($font-size,lg);
   width: 80%
 }
 
 .cover-text-index div a {
-  color: white;
-  font-size: 1.5625rem;
+  color: $first;
+  font-size: map-get($font-size,lg);
   width: 80%
 }
 
@@ -35,28 +35,15 @@ main {
 }
 
 .rol-1 {
-  display: flex;
-  align-self: flex-start;
+  @include start;
 }
 
 .rol-2 {
-  display: flex;
-  align-self: flex-end;
+  @include end;
 }
 
 .rol-3 {
-  display: flex;
-  align-self: flex-start;
-}
-
-.rol-4 {
-  display: flex;
-  align-self: flex-end;
-}
-
-.rol-5 {
-  display: flex;
-  align-self: flex-start;
+  @include start;
 }
 
 
@@ -70,8 +57,8 @@ main {
 
 .plan-index {
   margin: 10px;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.05);
+  color: $first;
+  background-color: $third;
   padding: 5px 0px;
   border-radius: 5%;
   text-decoration: none;
@@ -89,12 +76,12 @@ main {
 .plan-index-title {
   text-align: center;
   margin: 5px;
-  border-bottom: 2px white solid;
+  border-bottom: 2px $first solid;
 }
 
 .plan-index-price {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 2px solid $first;
+  border-bottom: 2px solid $first;
   text-align: center;
   margin-top: 5px;
 }
@@ -109,12 +96,12 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  background-color: white;
+  background-color: $first;
   padding: 5px 0px 5px 0px;
 }
 
 .group-contacto-index a {
-  color: #181818;
+  color: $second;
   text-decoration: none;
   text-align: center;
 }

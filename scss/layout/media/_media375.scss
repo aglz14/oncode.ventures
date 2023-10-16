@@ -16,8 +16,8 @@
   }
 
   .article1 {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.05);
+    color: $first;
+    background-color: $third;
     margin: .625rem;
     width: 15.625rem;
     text-align: center;
@@ -32,8 +32,8 @@
   }
 
   .article2 {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.05);
+    color: $first;
+    background-color: $third;
     margin: .625rem;
     width: 15.625rem;
     text-align: center;
@@ -48,8 +48,8 @@
   }
 
   .article3 {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.05);
+    color: $first;
+    background-color: $third;
     margin: .625rem;
     width: 250px;
     text-align: center;

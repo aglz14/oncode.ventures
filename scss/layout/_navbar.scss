@@ -1,13 +1,16 @@
+
+
+
 .navbar-nav .nav-link.active {
-    color: white;
-    font-size: 1.25rem;
+    color: $first;
+    font-size: map-get($font-size,md);
 }
 
 .navbar-nav .nav-link {
-    color: white;
-    font-size: 1.25rem;
+    color: $first;
+    font-size: map-get($font-size,md);
 }
-
+/**
 .nav-bar-ul {
   display: flex;
   list-style: none;
@@ -16,45 +19,46 @@
 
 .nav-bar-ul li a {
   text-decoration: none;
-  color: white;
-  font-size: 1.25rem;
+  color: $first;
+  font-size: map-get($font-size,md);
 }
 
 #contacto-navbar-index {
-  color: #181818;
-  background-color: white;
+  color: $second;
+  background-color: $first;
   padding: 5px 5px;
   border-radius: 6%;
   text-decoration: none;
 }
 
 #contacto-navbar-contacto {
-  color: #181818;
-  background-color: white;
+  color: $second;
+  background-color: $first;
   padding: 5px 5px;
   border-radius: 6%;
   text-decoration: none;
 }
 
 #contacto-navbar-noticias {
-  color: #181818;
-  background-color: white;
+  color: $second;
+  background-color: $first;
   padding: 5px 5px;
   border-radius: 6%;
   text-decoration: none;
 }
 
 #contacto-navbar-portafolio {
-  color: #181818;
-  background-color: white;
+  color: $second;
+  background-color: $first;
   padding: 5px 5px;
   border-radius: 6%;
   text-decoration: none;
 }
 
 #contacto-navbar-proceso {
-  color: #181818;
-  background-color: white;
+  color: $second;
+  background-color: $first;
   padding: 5px 5px;
   border-radius: 6%;
 }
+**/
