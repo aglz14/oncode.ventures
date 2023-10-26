@@ -33,4 +33,4 @@ Netlify:
 <https://oncode-ventures.netlify.app/>
 
 Presupuesto:
-<https://www.canva.com/design/DAFyT47ZHv0/ym1NKLN5liy_MWaWjI3elQ/edit?utm_content=DAFyT47ZHv0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton>
+<https://www.canva.com/design/DAFyT47ZHv0/PsCkloANu7lY43_Udncj_g/view?utm_content=DAFyT47ZHv0&utm_campaign=designshare&utm_medium=link&utm_source=editor>
