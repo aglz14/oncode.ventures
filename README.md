@@ -25,7 +25,7 @@ Este proyecto fue desarrollado para el curso de Desarrollo Web en **Coder House*
 # Creado por:
 Alejandro González Rodríguez
 
-# Liga de interés
+# Ligas de interés
 Repositorio:
 <https://github.com/aglz14/oncode.ventures>
 
