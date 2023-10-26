@@ -4,12 +4,13 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  .logo-header {
+    width: 15.625rem;
+    img {
+      width: 100%;
+    }
+  }
 }
 
-.logo-header {
-  width: 15.625rem;
-}
 
-.logo-header img {
-  width: 100%;
-}
+

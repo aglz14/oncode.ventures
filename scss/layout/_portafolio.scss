@@ -8,16 +8,40 @@
   margin-left: auto;
   margin-right: auto;
   flex-wrap: nowrap;
+
+  .card-portafolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: $first;
+        color: $second;
+        border-radius: 5%;
+        padding: 5px 5px 5px 5px;
+        width: 21.875rem;
+        height: 10.625rem;
+        margin: .625rem;
+        overflow: hidden;
+
+        img {
+          object-fit: cover;
+          margin-bottom: .625rem;
+        }
+    }
+
+    .card-description {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  }
 }
 
-.card-portafolio {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
-.card-description {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
+

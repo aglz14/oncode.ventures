@@ -19,10 +19,19 @@
     display: none;
   }
 
-  .proceso-body {
-    grid-area: proceso-body;
-    width: 40%;
+  .container-proceso {
+    display: flex;
+    flex-direction: column;
+    .proceso-body {
+      display: flex;
+      flex-direction: column;
+      p { 
+        width: 40%;
+      }
+    }
   }
+  
+
   .container-articles { 
     display: grid;
     grid-template-columns: 1fr;
@@ -31,36 +40,33 @@
     justify-items: center;
     row-gap: 3.125rem;
     margin-bottom: 6.25rem;
-  }
-
-  .article1 {
-  color: $first;
-  background-color: $third;
-  margin: .625rem;
-  width: 18.75rem;
-  text-align: center;
-  overflow: hidden;
-  grid-area: article1;
-  }
-
-  .article2 {
-    color: $first;
-    background-color: $third;
-    margin: .625rem;
-    width: 18.75rem;
-    text-align: center;
-    overflow: hidden;
-    grid-area: article2;
-  }
-
-  .article3 {
-    color: $first;
-    background-color: $third; 
-    margin: .625rem;
-    width: 18.75rem;
-    text-align: center;
-    overflow: hidden;
-    grid-area: article3;
+    .article1 {
+      color: $first;
+      background-color: $third;
+      margin: .625rem;
+      width: 18.75rem;
+      text-align: center;
+      overflow: hidden;
+      grid-area: article1;
+    }
+    .article2 {
+      color: $first;
+      background-color: $third;
+      margin: .625rem;
+      width: 18.75rem;
+      text-align: center;
+      overflow: hidden;
+      grid-area: article2;
+    }
+    .article3 {
+      color: $first;
+      background-color: $third; 
+      margin: .625rem;
+      width: 18.75rem;
+      text-align: center;
+      overflow: hidden;
+      grid-area: article3;
+    }
   }
   
   footer {

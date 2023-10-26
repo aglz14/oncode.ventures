@@ -24,10 +24,18 @@
     gap: 1.25rem;
   }
   
-  .proceso-body {
-    grid-area: proceso-body;
-    width: 60%;
+  .container-proceso {
+    display: flex;
+    flex-direction: column;
+    .proceso-body {
+      display: flex;
+      flex-direction: column;
+      p { 
+        width: 70%;
+      }
+    }
   }
+  
 
   .container-articles { 
     display: grid;

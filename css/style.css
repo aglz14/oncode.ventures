@@ -15,12 +15,10 @@ header {
   align-items: center;
   z-index: 3;
 }
-
-.logo-header {
+header .logo-header {
   width: 15.625rem;
 }
-
-.logo-header img {
+header .logo-header img {
   width: 100%;
 }
 
@@ -95,16 +93,13 @@ main {
   margin-top: 6.25rem;
   margin-bottom: 6.25rem;
 }
-
 .cover-text-index h1 {
   font-size: 3.75rem;
 }
-
 .cover-text-index div p {
   font-size: 1.5625rem;
   width: 80%;
 }
-
 .cover-text-index div a {
   color: white;
   font-size: 1.5625rem;
@@ -121,18 +116,15 @@ main {
   height: 4.375rem;
   margin-bottom: 6.25rem;
 }
-
-.rol-1 {
+.roles-box .rol-1 {
   display: flex;
   align-self: flex-start;
 }
-
-.rol-2 {
+.roles-box .rol-2 {
   display: flex;
   align-self: flex-end;
 }
-
-.rol-3 {
+.roles-box .rol-3 {
   display: flex;
   align-self: flex-start;
 }
@@ -144,8 +136,7 @@ main {
   flex-wrap: wrap;
   margin-bottom: 6.25rem;
 }
-
-.plan-index {
+.container-planes .plan-index {
   margin: 10px;
   color: white;
   background-color: rgba(255, 255, 255, 0.05);
@@ -157,39 +148,33 @@ main {
   overflow: hidden;
   position: relative;
 }
-
-.plan-index p {
-  padding: 0rem 0.3125rem;
-}
-
-.plan-index-title {
+.container-planes .plan-index .plan-index-title {
   text-align: center;
   margin: 5px;
   border-bottom: 2px white solid;
 }
-
-.plan-index-price {
+.container-planes .plan-index p {
+  padding: 0rem 0.3125rem;
+}
+.container-planes .plan-index .plan-bottom-group {
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
+}
+.container-planes .plan-index .plan-bottom-group div .plan-index-price {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   text-align: center;
   margin-top: 5px;
 }
-
-.plan-bottom-group {
-  position: absolute;
-  width: 100%;
-  bottom: 2px;
-}
-
-.group-contacto-index {
+.container-planes .plan-index .plan-bottom-group .group-contacto-index {
   display: flex;
   justify-content: center;
   margin-top: 10px;
   background-color: white;
   padding: 5px 0px 5px 0px;
 }
-
-.group-contacto-index a {
+.container-planes .plan-index .plan-bottom-group .group-contacto-index a {
   color: #181818;
   text-decoration: none;
   text-align: center;
@@ -212,8 +197,7 @@ body {
   margin-right: auto;
   margin-bottom: 6.25rem;
 }
-
-.container-proceso {
+.main-container-proceso .container-proceso {
   display: grid;
   grid-template-columns: 3.125rem 3.125rem auto;
   grid-template-rows: 1fr;
@@ -222,8 +206,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-.proceso-number {
+.main-container-proceso .container-proceso .proceso-number {
   padding: 10px 0px 0px 0px;
   align-items: center;
   text-align: center;
@@ -234,8 +217,7 @@ body {
   height: 48px;
   grid-area: proceso-number;
 }
-
-.proceso-body {
+.main-container-proceso .container-proceso .proceso-body {
   grid-area: proceso-body;
   width: 100%;
 }
@@ -251,85 +233,12 @@ body {
   margin-right: auto;
   flex-wrap: nowrap;
 }
-
-.card-portafolio {
+.container-portafolio .card-portafolio {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-.card-description {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-footer {
-  color: white;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 3.125rem;
-}
-
-footer a[href] {
-  color: white;
-}
-
-/** elementos de la carpeta components: **/
-.container-articles {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "article1 article2 article3";
-  justify-items: center;
-  margin-bottom: 6.25rem;
-}
-
-.article1, .article3, .article2 {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.05);
-  margin: 0.625rem;
-  width: 21.875rem;
-  text-align: center;
-  overflow: hidden;
-  grid-area: article1;
-}
-
-.article1 img, .article3 img, .article2 img {
-  width: 100%;
-  height: 18.75rem;
-  object-fit: cover;
-}
-
-.article2 {
-  grid-area: article2;
-}
-
-.article2 img {
-  width: 100%;
-  height: 18.75rem;
-  object-fit: cover;
-}
-
-.article3 {
-  grid-area: article3;
-}
-
-.article3 img {
-  width: 100%;
-  height: 18.75rem;
-  object-fit: cover;
-}
-
-.container-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 6.25rem;
-}
-
-.card {
+.container-portafolio .card-portafolio .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -344,8 +253,89 @@ footer a[href] {
   margin: 0.625rem;
   overflow: hidden;
 }
+.container-portafolio .card-portafolio .card img {
+  object-fit: cover;
+  margin-bottom: 0.625rem;
+}
+.container-portafolio .card-portafolio .card-description {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
 
-.card img {
+footer {
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+footer a[href] {
+  color: white;
+}
+
+/** elementos de la carpeta components: **/
+.container-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "article1 article2 article3";
+  justify-items: center;
+  margin-bottom: 6.25rem;
+}
+.container-articles .article1, .container-articles .article3, .container-articles .article2 {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 0.625rem;
+  width: 21.875rem;
+  text-align: center;
+  overflow: hidden;
+  grid-area: article1;
+}
+.container-articles .article1 img, .container-articles .article3 img, .container-articles .article2 img {
+  width: 100%;
+  height: 18.75rem;
+  object-fit: cover;
+}
+.container-articles .article2 {
+  grid-area: article2;
+}
+.container-articles .article2 img {
+  width: 100%;
+  height: 18.75rem;
+  object-fit: cover;
+}
+.container-articles .article3 {
+  grid-area: article3;
+}
+.container-articles .article3 img {
+  width: 100%;
+  height: 18.75rem;
+  object-fit: cover;
+}
+
+.container-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 6.25rem;
+}
+.container-card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: #181818;
+  border-radius: 5%;
+  padding: 5px 5px 5px 5px;
+  width: 21.875rem;
+  height: 10.625rem;
+  margin: 0.625rem;
+  overflow: hidden;
+}
+.container-card .card img {
   object-fit: cover;
   margin-bottom: 0.625rem;
 }
@@ -486,7 +476,27 @@ footer a[href] {
     row-gap: 0.75rem;
     z-index: 3;
   }
-  .proceso-body {
+  .container-proceso {
+    display: grid;
+    grid-template-columns: 3.125rem 3.125rem auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "proceso-number . proceso-body";
+    margin-bottom: 1.875rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-proceso .proceso-number {
+    padding: 10px 0px 0px 0px;
+    align-items: center;
+    text-align: center;
+    color: #181818;
+    border-radius: 100%;
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    grid-area: proceso-number;
+  }
+  .container-proceso .proceso-body {
     grid-area: proceso-body;
     width: 80%;
   }
@@ -522,9 +532,16 @@ footer a[href] {
     list-style: none;
     gap: 1.25rem;
   }
-  .proceso-body {
-    grid-area: proceso-body;
-    width: 60%;
+  .container-proceso {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-proceso .proceso-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-proceso .proceso-body p {
+    width: 70%;
   }
   .container-articles {
     display: grid;
@@ -552,8 +569,15 @@ footer a[href] {
   .card img {
     display: none;
   }
-  .proceso-body {
-    grid-area: proceso-body;
+  .container-proceso {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-proceso .proceso-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-proceso .proceso-body p {
     width: 40%;
   }
   .container-articles {
@@ -565,7 +589,7 @@ footer a[href] {
     row-gap: 3.125rem;
     margin-bottom: 6.25rem;
   }
-  .article1, .article2, .article3 {
+  .container-articles .article1, .container-articles .article2, .container-articles .article3 {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0.625rem;
@@ -574,7 +598,7 @@ footer a[href] {
     overflow: hidden;
     grid-area: article1;
   }
-  .article2 {
+  .container-articles .article2 {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0.625rem;
@@ -583,7 +607,7 @@ footer a[href] {
     overflow: hidden;
     grid-area: article2;
   }
-  .article3 {
+  .container-articles .article3 {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0.625rem;
@@ -637,9 +661,21 @@ footer a[href] {
     justify-content: space-evenly;
     margin-bottom: 6.25rem;
   }
-  .proceso-body {
-    grid-area: proceso-body;
-    width: 25%;
+  .container-proceso {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-proceso .proceso-body {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+  .container-proceso .proceso-body h4 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .container-proceso .proceso-body p {
+    width: 30%;
   }
   .container-articles {
     display: grid;
@@ -650,7 +686,7 @@ footer a[href] {
     row-gap: 3.125rem;
     margin-bottom: 6.25rem;
   }
-  .article1, .article2, .article3 {
+  .container-articles .article1, .container-articles .article2, .container-articles .article3 {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0.625rem;
@@ -659,12 +695,12 @@ footer a[href] {
     overflow: hidden;
     grid-area: article1;
   }
-  .article1 img, .article2 img, .article3 img {
+  .container-articles .article1 img, .container-articles .article2 img, .container-articles .article3 img {
     width: 100%;
     height: 12.5rem;
     object-fit: cover;
   }
-  .article2 {
+  .container-articles .article2 {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0.625rem;
@@ -673,12 +709,12 @@ footer a[href] {
     overflow: hidden;
     grid-area: article2;
   }
-  .article2 img {
+  .container-articles .article2 img {
     width: 100%;
     height: 12.5rem;
     object-fit: cover;
   }
-  .article3 {
+  .container-articles .article3 {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0.625rem;
@@ -687,7 +723,7 @@ footer a[href] {
     overflow: hidden;
     grid-area: article3;
   }
-  .article3 img {
+  .container-articles .article3 img {
     width: 100%;
     height: 12.5rem;
     object-fit: cover;
@@ -737,9 +773,21 @@ footer a[href] {
     justify-content: space-evenly;
     margin-bottom: 6.25rem;
   }
-  .proceso-body {
-    grid-area: proceso-body;
-    width: 15%;
+  .container-proceso {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-proceso .proceso-body {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+  .container-proceso .proceso-body h4 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .container-proceso .proceso-body p {
+    width: 20%;
   }
   .container-articles {
     display: grid;
@@ -750,7 +798,7 @@ footer a[href] {
     row-gap: 3.125rem;
     margin-bottom: 6.25rem;
   }
-  .article1, .article2, .article3 {
+  .container-articles .article1, .container-articles .article2, .container-articles .article3 {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0.625rem;
@@ -759,12 +807,12 @@ footer a[href] {
     overflow: hidden;
     grid-area: article1;
   }
-  .article1 img, .article2 img, .article3 img {
+  .container-articles .article1 img, .container-articles .article2 img, .container-articles .article3 img {
     width: 100%;
     height: 12.5rem;
     object-fit: cover;
   }
-  .article2 {
+  .container-articles .article2 {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0.625rem;
@@ -773,12 +821,12 @@ footer a[href] {
     overflow: hidden;
     grid-area: article2;
   }
-  .article2 img {
+  .container-articles .article2 img {
     width: 100%;
     height: 12.5rem;
     object-fit: cover;
   }
-  .article3 {
+  .container-articles .article3 {
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0.625rem;
@@ -787,7 +835,7 @@ footer a[href] {
     overflow: hidden;
     grid-area: article3;
   }
-  .article3 img {
+  .container-articles .article3 img {
     width: 100%;
     height: 12.5rem;
     object-fit: cover;

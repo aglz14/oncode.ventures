@@ -3,8 +3,7 @@ footer {
   align-items: center;
   text-align: center;
   margin-bottom: 3.125rem;
-}
-
-footer a[href] {
-  color: $first;
+  a[href] {
+    color: $first;
+  }
 }

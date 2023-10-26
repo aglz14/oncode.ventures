@@ -6,21 +6,20 @@ main {
   display: flex;
   margin-top: 6.25rem;
   margin-bottom: 6.25rem;
-}
-
-.cover-text-index h1 {
-  font-size: map-get($font-size,xxl);
-}
-
-.cover-text-index div p {
-  font-size: map-get($font-size,lg);
-  width: 80%
-}
-
-.cover-text-index div a {
-  color: $first;
-  font-size: map-get($font-size,lg);
-  width: 80%
+  h1 {
+    font-size: map-get($font-size,xxl);
+  }
+  div {
+    p {
+      font-size: map-get($font-size,lg);
+      width: 80%;
+    }
+    a {
+      color: $first;
+      font-size: map-get($font-size,lg);
+      width: 80%;
+    }
+  }
 }
 
 .ofrecemos {
@@ -32,20 +31,16 @@ main {
   justify-content: space-evenly;
   height: 4.375rem;
   margin-bottom: 6.25rem;
+  .rol-1 {
+    @include start;
+  }
+  .rol-2 {
+    @include end;
+  }
+  .rol-3 {
+    @include start;
+  }
 }
-
-.rol-1 {
-  @include start;
-}
-
-.rol-2 {
-  @include end;
-}
-
-.rol-3 {
-  @include start;
-}
-
 
 .container-planes {
   display: flex;
@@ -53,55 +48,49 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 6.25rem;
-}
-
-.plan-index {
-  margin: 10px;
-  color: $first;
-  background-color: $third;
-  padding: 5px 0px;
-  border-radius: 5%;
-  text-decoration: none;
-  width: 21.875rem;
-  height: 23.75rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.plan-index p {
-  padding: 0rem .3125rem
-}
-
-
-.plan-index-title {
-  text-align: center;
-  margin: 5px;
-  border-bottom: 2px $first solid;
-}
-
-.plan-index-price {
-  border-top: 2px solid $first;
-  border-bottom: 2px solid $first;
-  text-align: center;
-  margin-top: 5px;
-}
-
-.plan-bottom-group {
-  position: absolute;
-  width: 100%;
-  bottom:2px;
-}
-
-.group-contacto-index {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  background-color: $first;
-  padding: 5px 0px 5px 0px;
-}
-
-.group-contacto-index a {
-  color: $second;
-  text-decoration: none;
-  text-align: center;
+  .plan-index {
+    margin: 10px;
+    color: $first;
+    background-color: $third;
+    padding: 5px 0px;
+    border-radius: 5%;
+    text-decoration: none;
+    width: 21.875rem;
+    height: 23.75rem;
+    overflow: hidden;
+    position: relative;
+    .plan-index-title {
+      text-align: center;
+      margin: 5px;
+      border-bottom: 2px $first solid;
+    }
+    p {
+      padding: 0rem .3125rem
+    }
+    .plan-bottom-group {
+      position: absolute;
+      width: 100%;
+      bottom:2px;
+      div {
+        .plan-index-price {
+          border-top: 2px solid $first;
+          border-bottom: 2px solid $first;
+          text-align: center;
+          margin-top: 5px;
+        }
+      }
+      .group-contacto-index {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        background-color: $first;
+        padding: 5px 0px 5px 0px;
+        a {
+          color: $second;
+          text-decoration: none;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

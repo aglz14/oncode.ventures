@@ -9,10 +9,34 @@
     z-index: 3;
   }
   
-  .proceso-body {
-    grid-area: proceso-body;
-    width: 80%;
+  .container-proceso {
+    display: grid;
+    grid-template-columns: 3.125rem 3.125rem auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "proceso-number . proceso-body"
+    ;
+    margin-bottom: 1.875rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .proceso-number {
+      padding: 10px 0px 0px 0px;
+      align-items: center;
+      text-align: center;
+      color: $second;
+      border-radius: 100%;
+      background-color: $first;
+      width: 48px;
+      height: 48px;
+      grid-area: proceso-number;
+    }
+    .proceso-body {
+      grid-area: proceso-body;
+      width: 80%;
+    }
   }
+
   .container-articles { 
     display: grid;
     grid-template-columns: 1fr 1fr;

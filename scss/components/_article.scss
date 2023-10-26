@@ -7,36 +7,41 @@
   ;
   justify-items: center;
   margin-bottom: 6.25rem;
+  
+  .article1 {
+    color: $first;
+    background-color: $third;
+    margin: .625rem;
+    width: 21.875rem;
+    text-align: center;
+    overflow: hidden;
+    grid-area: article1;
+    img {
+      @include articleimg;
+    }
+  }
+
+  .article2 {
+    @extend .article1;
+    grid-area: article2;
+    img {
+      @include articleimg;
+    }
+  }
+
+  .article3 {
+    @extend .article1;
+    grid-area: article3;
+    img {
+      @include articleimg;
+    }
+  }
 }
 
-.article1 {
-  color: $first;
-  background-color: $third;
-  margin: .625rem;
-  width: 21.875rem;
-  text-align: center;
-  overflow: hidden;
-  grid-area: article1;
-}
 
-.article1 img {
-  @include articleimg;
-}
 
-.article2 {
-  @extend .article1;
-  grid-area: article2;
-}
 
-.article2 img {
-  @include articleimg;
-}
 
-.article3 {
-  @extend .article1;
-  grid-area: article3;
-}
 
-.article3 img {
-  @include articleimg;
-}
+
+

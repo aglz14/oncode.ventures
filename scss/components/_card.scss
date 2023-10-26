@@ -4,25 +4,26 @@
   justify-content: space-around;
   flex-wrap:wrap;
   margin-bottom: 6.25rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $first;
+    color: $second;
+    border-radius: 5%;
+    padding: 5px 5px 5px 5px;
+    width: 21.875rem;
+    height: 10.625rem;
+    margin: .625rem;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      margin-bottom: .625rem;
+    }
+  }
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: $first;
-  color: $second;
-  border-radius: 5%;
-  padding: 5px 5px 5px 5px;
-  width: 21.875rem;
-  height: 10.625rem;
-  margin: .625rem;
-  overflow: hidden;
-}
-
-.card img {
-  object-fit: cover;
-  margin-bottom: .625rem;
-}
